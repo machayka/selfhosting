@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html data-theme="dark" lang="pl">
+  <head>
+    <title>Dokumentacja - Self-hosting</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+
+  <body class="bg-base-200">
+    <!-- Sidebar -->
+    <!--#include virtual="/components/sidebar.html" -->
+
+    <!-- Main content -->
+    <main class="w-full lg:ml-64 max-w-6xl mx-auto p-6 lg:p-8">
+      <!-- Content sections -->
+      <article class="prose prose-lg max-w-none">
+        <!-- Witaj -->
+        <section id="witaj" class="mb-12">
+          <h1 class="text-4xl font-bold mb-4">Witaj w dokumentacji</h1>
+
+          <p class="mb-4">
+            Instrukcja obsługi dla programistów amatorów. Każde narzędzie
+            używane przez programistów ma swoją dokumentację, którą studiują
+            przez godziny.
+          </p>
+
+          <div class="alert alert-success mb-6">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="stroke-current shrink-0 h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+              />
+            </svg>
+            <div>
+              <strong>Ta jest inna:</strong> napisana prostym językiem, bez
+              żargonu technicznego, z praktycznymi przykładami. Przeprowadzimy
+              Cię przez każdy krok – wszystko wyjaśnimy tak, żebyś rozumiał nie
+              tylko "co", ale i "dlaczego".
+            </div>
+          </div>
+        </section>
+
+        <!-- Czym jest self-hosting -->
+        <section id="self-hosting" class="mb-12">
+          <h2 class="text-3xl font-bold mb-4">Czym jest self-hosting?</h2>
+
+          <div class="card bg-base-100 shadow-xl">
+            <div class="card-body">
+              <p class="text-lg">
+                Self-hosting to prowadzenie własnego serwera zamiast
+                wynajmowania miejsca u zewnętrznego dostawcy.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Dlaczego warto -->
+        <section id="dlaczego" class="mb-12">
+          <h2 class="text-3xl font-bold mb-4">
+            Dlaczego warto, jeśli myślisz o hostowaniu strony dłużej niż rok?
+          </h2>
+
+          <div class="card bg-base-100 shadow-xl mb-6">
+            <div class="card-body">
+              <p class="mb-4">
+                Dostawcy hostingu regularnie podnoszą ceny. Dzisiaj płacisz
+                <strong>50 zł miesięcznie</strong>, za rok
+                <strong>80 zł</strong>, a gdy "promocja się kończy" – nawet
+                <strong>150 zł</strong>.
+              </p>
+              <p>
+                Z inwestycją w całą zawartość strony zostaje Ci tylko płacić.
+                Przy self-hostingu jedynym kosztem jest prąd.
+              </p>
+            </div>
+          </div>
+
+          <div class="stats stats-vertical lg:stats-horizontal shadow mb-6">
+            <div class="stat">
+              <div class="stat-title">Hosting tradycyjny</div>
+              <div class="stat-value text-error">600-1800 zł/rok</div>
+              <div class="stat-desc">Stale rosnące koszty + domena</div>
+            </div>
+            <div class="stat">
+              <div class="stat-title">Self-hosting</div>
+              <div class="stat-value text-success">~50 zł/rok</div>
+              <div class="stat-desc">Tylko prąd + domena</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Czy oprogramowanie jest darmowe -->
+        <section id="darmowe" class="mb-12">
+          <h2 class="text-3xl font-bold mb-4">
+            Czy oprogramowanie jest darmowe?
+          </h2>
+
+          <div class="alert alert-info mb-6">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              class="stroke-current shrink-0 w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+              ></path>
+            </svg>
+            <div>
+              <strong
+                >Tak – całe oprogramowanie serwerowe jest open source i dostępne
+                za darmo.</strong
+              >
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+            <div class="card bg-base-100 shadow-xl">
+              <div class="card-body">
+                <h3 class="card-title text-success">✓ Serwery WWW</h3>
+                <p class="text-sm">Nginx, Apache – darmowe</p>
+              </div>
+            </div>
+
+            <div class="card bg-base-100 shadow-xl">
+              <div class="card-body">
+                <h3 class="card-title text-success">✓ Bazy danych</h3>
+                <p class="text-sm">MySQL, PostgreSQL – darmowe</p>
+              </div>
+            </div>
+
+            <div class="card bg-base-100 shadow-xl">
+              <div class="card-body">
+                <h3 class="card-title text-success">✓ Języki programowania</h3>
+                <p class="text-sm">PHP, Python, Node.js – darmowe</p>
+              </div>
+            </div>
+
+            <div class="card bg-base-100 shadow-xl">
+              <div class="card-body">
+                <h3 class="card-title text-success">✓ System operacyjny</h3>
+                <p class="text-sm">Linux – darmowy</p>
+              </div>
+            </div>
+
+            <div class="card bg-base-100 shadow-xl md:col-span-2">
+              <div class="card-body">
+                <h3 class="card-title text-success">✓ Certyfikaty SSL</h3>
+                <p class="text-sm">
+                  Kłódka przy adresie HTTPS – darmowe dzięki Let's Encrypt
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Co sprzedają -->
+        <section id="co-sprzedaja" class="mb-12">
+          <h2 class="text-3xl font-bold mb-4">
+            Co więc sprzedają firmy hostingowe?
+          </h2>
+
+          <div class="alert alert-warning">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="stroke-current shrink-0 h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"
+              />
+            </svg>
+            <div>
+              <p class="mb-2">
+                <strong
+                  >Wynajmują Ci komputer z zainstalowanym darmowym
+                  oprogramowaniem.</strong
+                >
+              </p>
+              <p>
+                To jak gdyby ktoś pobrał darmowy VLC Player, zainstalował go na
+                swoim laptopie i kazał Ci płacić 50 zł miesięcznie za "usługę
+                odtwarzania filmów".
+              </p>
+            </div>
+          </div>
+        </section>
+      </article>
+
+      <!-- Pagination -->
+      <div class="flex justify-end mt-12">
+        <a href="/dokumentacja/pierwszy-krok" class="btn btn-primary"
+          >Dalej →</a
+        >
+      </div>
+    </main>
+  </body>
+</html>

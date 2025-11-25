@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html data-theme="dark" lang="pl">
+  <head>
+    <title>Dokumentacja - Self-hosting</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+
+  <body class="bg-base-200">
+    <!-- Sidebar -->
+    <!--#include virtual="/components/sidebar.html" -->
+
+    <!-- Main content -->
+    <main class="w-full lg:ml-64 max-w-6xl mx-auto p-6 lg:p-8">
+        <!-- Content sections -->
+        <article class="prose prose-lg max-w-none">
+          <!-- Wprowadzenie -->
+          <section id="wprowadzenie" class="mb-12">
+            <h1 class="text-4xl font-bold mb-4">Opublikuj swoją stronę na GitHub</h1>
+
+            <div class="alert alert-info mb-6">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                class="stroke-current shrink-0 w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                ></path>
+              </svg>
+              <div>
+                <strong>Serwer musi skądś pobrać Twoją stronę.</strong><br>
+                GitHub będzie mostem między Twoim komputerem a serwerem.
+              </div>
+            </div>
+
+            <p class="mb-4">
+              Edytujesz stronę lokalnie → wrzucasz na GitHub → serwer automatycznie pobiera nową wersję.
+            </p>
+          </section>
+
+          <!-- Krok po kroku -->
+          <section id="publikacja" class="mb-12">
+            <h2 class="text-3xl font-bold mb-4">Krok po kroku - publikacja własnej strony</h2>
+
+            <div class="card bg-base-100 shadow-xl mb-6">
+              <div class="card-body">
+                <div class="steps steps-vertical">
+                  <div class="step step-primary">
+                    <div class="text-left ml-4">
+                      <h4 class="font-bold">Krok 1: Załóż konto na github.com</h4>
+                      <p class="text-sm opacity-75">
+                        Darmowe
+                      </p>
+                    </div>
+                  </div>
+                  <div class="step step-primary">
+                    <div class="text-left ml-4">
+                      <h4 class="font-bold">Krok 2: Kliknij zielony przycisk "New"</h4>
+                      <p class="text-sm opacity-75">
+                        Lub "New repository"
+                      </p>
+                    </div>
+                  </div>
+                  <div class="step step-primary">
+                    <div class="text-left ml-4">
+                      <h4 class="font-bold">Krok 3: Nazwij repozytorium</h4>
+                      <p class="text-sm opacity-75">
+                        <code>moja-strona</code> (lub jak chcesz)
+                      </p>
+                      <ul class="text-sm opacity-75 mt-2 space-y-1">
+                        <li>• Ustaw jako <strong>Public</strong> (publiczne - darmowe)</li>
+                        <li>• NIE zaznaczaj "Add README file"</li>
+                        <li>• Kliknij <strong>"Create repository"</strong></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="step step-primary">
+                    <div class="text-left ml-4">
+                      <h4 class="font-bold">Krok 4: GitHub pokaże Ci instrukcje</h4>
+                      <p class="text-sm opacity-75">
+                        Zignoruj je (za trudne na start)
+                      </p>
+                    </div>
+                  </div>
+                  <div class="step step-primary">
+                    <div class="text-left ml-4">
+                      <h4 class="font-bold">Krok 5: Kliknij "uploading an existing file"</h4>
+                      <p class="text-sm opacity-75">
+                        Małe, niebieskie, w środku strony
+                      </p>
+                    </div>
+                  </div>
+                  <div class="step step-primary">
+                    <div class="text-left ml-4">
+                      <h4 class="font-bold">Krok 6: Przeciągnij swoje pliki na stronę</h4>
+                      <ul class="text-sm opacity-75 mt-2 space-y-1">
+                        <li>• <code>index.html</code> (ten zmieniony przez AI)</li>
+                        <li>• <code>style.css</code> (jeśli masz)</li>
+                        <li>• inne pliki strony</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="step step-primary">
+                    <div class="text-left ml-4">
+                      <h4 class="font-bold">Krok 7: Kliknij "Commit changes"</h4>
+                      <p class="text-sm opacity-75">
+                        Zielony przycisk na dole
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Co dalej -->
+          <section id="aktualizacja" class="mb-12">
+            <h2 class="text-3xl font-bold mb-4">Co dalej?</h2>
+
+            <div class="alert alert-success mb-6">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="stroke-current shrink-0 h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              </svg>
+              <div>
+                <strong>Za każdym razem gdy zmienisz stronę:</strong>
+              </div>
+            </div>
+
+            <div class="card bg-base-100 shadow-xl mb-6">
+              <div class="card-body">
+                <ol class="list-decimal list-inside space-y-3">
+                  <li>Wejdź w plik na GitHubie</li>
+                  <li>Kliknij ołówek (edytuj)</li>
+                  <li>Wklej nowy kod z AI</li>
+                  <li>Kliknij "Commit changes"</li>
+                  <li><strong>Serwer dzięki temu sam pobierze zmiany!</strong> (nauczymy Cię tego w następnym kroku)</li>
+                </ol>
+              </div>
+            </div>
+          </section>
+
+          <!-- Ważne -->
+          <section id="wazne" class="mb-12">
+            <h2 class="text-3xl font-bold mb-4">💡 Ważne</h2>
+
+            <div class="alert alert-warning">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="stroke-current shrink-0 h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"
+                />
+              </svg>
+              <div>
+                <strong>Nie przejmuj się że kod jest publiczny.</strong><br>
+                99% stron w internecie ma publiczny kod HTML. To nie tajemnica. Tajemnicą są hasła i dane - ale tych NIE trzymamy w kodzie strony.
+              </div>
+            </div>
+          </section>
+        </article>
+
+        <!-- Pagination -->
+        <div class="flex justify-between mt-12">
+          <button class="btn btn-outline">← Wstecz</button>
+          <button class="btn btn-primary">Dalej →</button>
+        </div>
+      </main>
+  </body>
+</html>
