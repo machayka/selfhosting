@@ -1,14 +1,10 @@
-<!DOCTYPE html>
+<!doctype html>
 <html data-theme="dark" lang="pl">
   <head>
     <title>Dokumentacja - Self-hosting</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/daisyui@5"
-      rel="stylesheet"
-      type="text/css"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
 
@@ -18,183 +14,186 @@
 
     <!-- Main content -->
     <main class="w-full lg:ml-64 max-w-6xl mx-auto p-6 lg:p-8">
-        <!-- Content sections -->
-        <article class="prose prose-lg max-w-none">
-          <!-- Wprowadzenie -->
-          <section id="wprowadzenie" class="mb-12">
-            <h1 class="text-4xl font-bold mb-4">Jak AI zmieni Twoją stronę w 30 sekund</h1>
+      <!-- Content sections -->
+      <article class="prose prose-lg max-w-none">
+        <!-- Wprowadzenie -->
+        <section id="wprowadzenie" class="mb-12">
+          <h1 class="text-4xl font-bold mb-4">Jak AI zmieni Twoją-Stronę w 30 sekund</h1>
 
-            <div class="alert alert-info mb-6">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                class="stroke-current shrink-0 w-6 h-6"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                ></path>
-              </svg>
-              <span><strong>Nie umiesz programować? AI napisze kod za Ciebie.</strong></span>
-            </div>
-          </section>
+          <div class="alert alert-info mb-6">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              class="stroke-current shrink-0 w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+              ></path>
+            </svg>
+            <span
+              ><strong
+                >AI poradzi sobie znakomicie z prostą stroną wizytówkową Twojej firmy, jednak jeśli
+                potrzebujesz czegoś bardziej skomplikowanego, nieuniknione będzie zatrudnienie
+                programisty.</strong
+              ></span
+            >
+          </div>
+        </section>
 
-          <!-- Krok po kroku -->
-          <section id="krok-po-kroku" class="mb-12">
-            <h2 class="text-3xl font-bold mb-4">Krok po kroku - edycja strony z Claude</h2>
+        <!-- Krok po kroku -->
+        <section id="krok-po-kroku" class="mb-12">
+          <h2 class="text-3xl font-bold mb-4">Krok po kroku - edycja strony z Claude</h2>
 
-            <div class="card bg-base-100 shadow-xl mb-6">
-              <div class="card-body">
-                <div class="steps steps-vertical">
-                  <div class="step step-primary">
-                    <div class="text-left ml-4">
-                      <h4 class="font-bold">Krok 1: Otwórz plik w notatniku</h4>
-                      <p class="text-sm opacity-75">
-                        Kliknij prawym przyciskiem na <code>index.html</code> → Otwórz za pomocą → Notatnik
-                      </p>
-                    </div>
-                  </div>
-                  <div class="step step-primary">
-                    <div class="text-left ml-4">
-                      <h4 class="font-bold">Krok 2: Skopiuj całą zawartość</h4>
-                      <p class="text-sm opacity-75">
-                        Użyj <kbd class="kbd kbd-sm">Ctrl</kbd>+<kbd class="kbd kbd-sm">A</kbd>, potem <kbd class="kbd kbd-sm">Ctrl</kbd>+<kbd class="kbd kbd-sm">C</kbd>
-                      </p>
-                    </div>
-                  </div>
-                  <div class="step step-primary">
-                    <div class="text-left ml-4">
-                      <h4 class="font-bold">Krok 3: Wejdź na claude.ai</h4>
-                      <p class="text-sm opacity-75">
-                        Darmowe 30 zapytań dziennie
-                      </p>
-                    </div>
-                  </div>
-                  <div class="step step-primary">
-                    <div class="text-left ml-4">
-                      <h4 class="font-bold">Krok 4: Wklej kod i napisz po polsku czego chcesz</h4>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Przykład konwersacji -->
-            <div class="mb-6">
-              <div class="chat chat-end mb-4">
-                <div class="chat-bubble chat-bubble-primary">
-                  Oto mój kod strony:<br>
-                  [tutaj wklej cały kod HTML]<br><br>
-                  Zmień:<br>
-                  - tytuł strony na "Mechanika Samochodowa Kowalski"<br>
-                  - dostosuj motyw<br>
-                  - dodaj sekcję z godzinami otwarcia<br>
-                  - dodaj przycisk "Zadzwoń teraz" z numerem 123-456-789
-                </div>
-              </div>
-
-              <div class="chat chat-start mb-6">
-                <div class="chat-bubble chat-bubble-secondary">
-                  Oczywiście! Oto zaktualizowana strona dla Mechaniki Samochodowej Kowalski...<br>
-                  [Claude zwraca kompletny nowy kod HTML]
-                </div>
-              </div>
-            </div>
-
-            <div class="card bg-base-100 shadow-xl mb-6">
-              <div class="card-body">
-                <div class="steps steps-vertical">
-                  <div class="step step-primary">
-                    <div class="text-left ml-4">
-                      <h4 class="font-bold">Krok 5: Claude zwróci Ci nowy kod</h4>
-                      <p class="text-sm opacity-75">
-                        Skopiuj go całego
-                      </p>
-                    </div>
-                  </div>
-                  <div class="step step-primary">
-                    <div class="text-left ml-4">
-                      <h4 class="font-bold">Krok 6: Wklej do notatnika</h4>
-                      <p class="text-sm opacity-75">
-                        Zastąp stary kod nowym
-                      </p>
-                    </div>
-                  </div>
-                  <div class="step step-primary">
-                    <div class="text-left ml-4">
-                      <h4 class="font-bold">Krok 7: Zapisz plik</h4>
-                      <p class="text-sm opacity-75">
-                        <kbd class="kbd kbd-sm">Ctrl</kbd>+<kbd class="kbd kbd-sm">S</kbd>
-                      </p>
-                    </div>
-                  </div>
-                  <div class="step step-primary">
-                    <div class="text-left ml-4">
-                      <h4 class="font-bold">Krok 8: Odśwież stronę w przeglądarce</h4>
-                      <p class="text-sm opacity-75">
-                        BOOM! Masz nową stronę
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <!-- Przykładowe polecenia -->
-          <section id="przyklady" class="mb-12">
-            <h2 class="text-3xl font-bold mb-4">Przykładowe polecenia dla AI</h2>
-
-            <div class="alert alert-success mb-4">
-              <span class="text-2xl">💇</span>
-              <div>
-                <h3 class="font-bold text-lg">Dla fryzjera</h3>
-                <p class="text-sm">
-                  "Zmień stronę na salon fryzjerski, dodaj galerię przed/po, cennik usług, formularz rezerwacji"
-                </p>
-              </div>
-            </div>
-
-            <div class="alert alert-warning mb-4">
-              <span class="text-2xl">🍕</span>
-              <div>
-                <h3 class="font-bold text-lg">Dla restauracji</h3>
-                <p class="text-sm">
-                  "Przebuduj na stronę restauracji z menu, godzinami otwarcia, mapką dojazdu"
-                </p>
-              </div>
-            </div>
-
-            <div class="alert alert-info mb-4">
-              <span class="text-2xl">💼</span>
-              <div>
-                <h3 class="font-bold text-lg">Dla freelancera</h3>
-                <p class="text-sm">
-                  "Zrób portfolio z moimi projektami i sekcją 'o mnie'"
-                </p>
-              </div>
-            </div>
-          </section>
-
-          <!-- Następne kroki -->
-          <div class="card bg-base-300 shadow-xl mt-12">
+          <div class="card bg-base-100 shadow-xl mb-6">
             <div class="card-body">
-              <h2 class="card-title text-2xl">✨ Wskazówka</h2>
-              <p>
-                Im dokładniej opiszesz co chcesz zmienić, tym lepszy będzie rezultat. Możesz poprosić AI o konkretne kolory, style, układ strony i funkcje.
+              <div class="steps steps-vertical">
+                <div class="step step-primary">
+                  <div class="text-left ml-4">
+                    <h4 class="font-bold">Krok 1: Otwórz plik w notatniku</h4>
+                    <p class="text-sm opacity-75">
+                      Kliknij prawym przyciskiem na <code>index.html</code> → Otwórz za pomocą →
+                      Notatnik
+                    </p>
+                  </div>
+                </div>
+                <div class="step step-primary">
+                  <div class="text-left ml-4">
+                    <h4 class="font-bold">Krok 2: Skopiuj całą zawartość</h4>
+                    <p class="text-sm opacity-75">
+                      Użyj <kbd class="kbd kbd-sm">Ctrl</kbd>+<kbd class="kbd kbd-sm">A</kbd>, potem
+                      <kbd class="kbd kbd-sm">Ctrl</kbd>+<kbd class="kbd kbd-sm">C</kbd>
+                    </p>
+                  </div>
+                </div>
+                <div class="step step-primary">
+                  <div class="text-left ml-4">
+                    <h4 class="font-bold">
+                      Krok 3: Wejdź na
+                      <a href="https://claude.ai/" target="_blank" class="underline">claude.ai</a>
+                    </h4>
+                    <p class="text-sm opacity-75">W naszych testach wypadł lepiej niż chatGPT</p>
+                  </div>
+                </div>
+                <div class="step step-primary">
+                  <div class="text-left ml-4">
+                    <h4 class="font-bold">Krok 4: Wklej kod i napisz co potrzebujesz</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Przykład konwersacji -->
+          <div class="mb-6">
+            <div class="chat chat-end mb-4">
+              <div class="chat-bubble chat-bubble-primary">
+                To jest przykładowa strona internetowa, którą zmień pod moje potrzeby:
+                <br />
+                [tutaj wklej całą zawartość pliku index.html]<br /><br />
+                Zmień:<br />
+                - tytuł strony na "Mechanika Samochodowa Kowalski"<br />
+                - dostosuj motyw<br />
+                - zmień przycisk "Zadzwoń teraz" na numer 123-456-789
+              </div>
+            </div>
+
+            <div class="chat chat-start mb-6">
+              <div class="chat-bubble chat-bubble-secondary">
+                Oczywiście! Oto zaktualizowana strona dla Mechaniki Samochodowej Kowalski...<br />
+                [Claude zwraca kompletny nowy kod HTML]
+              </div>
+            </div>
+          </div>
+
+          <div class="card bg-base-100 shadow-xl mb-6">
+            <div class="card-body">
+              <div class="steps steps-vertical">
+                <div class="step step-primary">
+                  <div class="text-left ml-4">
+                    <h4 class="font-bold">Krok 5: Claude zwróci Ci nowy kod</h4>
+                    <p class="text-sm opacity-75">Skopiuj go całego</p>
+                  </div>
+                </div>
+                <div class="step step-primary">
+                  <div class="text-left ml-4">
+                    <h4 class="font-bold">Krok 6: Wklej do notatnika</h4>
+                    <p class="text-sm opacity-75">Zastąp stary kod nowym</p>
+                  </div>
+                </div>
+                <div class="step step-primary">
+                  <div class="text-left ml-4">
+                    <h4 class="font-bold">Krok 7: Zapisz plik</h4>
+                    <p class="text-sm opacity-75">
+                      <kbd class="kbd kbd-sm">Ctrl</kbd>+<kbd class="kbd kbd-sm">S</kbd>
+                    </p>
+                  </div>
+                </div>
+                <div class="step step-primary">
+                  <div class="text-left ml-4">
+                    <h4 class="font-bold">Krok 8: Odśwież stronę w przeglądarce</h4>
+                    <p class="text-sm opacity-75">Poproś o poprawki jeśli będzie trzeba</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Przykładowe polecenia -->
+        <section id="przyklady" class="mb-12">
+          <h2 class="text-3xl font-bold mb-4">Przykładowe polecenia dla AI</h2>
+
+          <div class="alert alert-success mb-4">
+            <span class="text-2xl">💇</span>
+            <div>
+              <h3 class="font-bold text-lg">Dla fryzjera</h3>
+              <p class="text-sm">
+                "Zmień stronę na salon fryzjerski, dodaj galerię przed/po, cennik usług, formularz
+                rezerwacji"
               </p>
             </div>
           </div>
-        </article>
 
-        <!-- Pagination -->
-        <div class="flex justify-between mt-12">
-          <button class="btn btn-outline">← Wstecz</button>
-          <button class="btn btn-primary">Dalej →</button>
+          <div class="alert alert-warning mb-4">
+            <span class="text-2xl">🍕</span>
+            <div>
+              <h3 class="font-bold text-lg">Dla restauracji</h3>
+              <p class="text-sm">
+                "Przebuduj na stronę restauracji z menu, godzinami otwarcia, mapką dojazdu"
+              </p>
+            </div>
+          </div>
+
+          <div class="alert alert-info mb-4">
+            <span class="text-2xl">💼</span>
+            <div>
+              <h3 class="font-bold text-lg">Dla freelancera</h3>
+              <p class="text-sm">"Zrób portfolio z moimi projektami i sekcją 'o mnie'"</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Następne kroki -->
+        <div class="card bg-base-300 shadow-xl mt-12">
+          <div class="card-body">
+            <h2 class="card-title text-2xl">✨ Wskazówka</h2>
+            <p>
+              Im dokładniej opiszesz co chcesz zmienić, tym lepszy będzie rezultat. Możesz poprosić
+              AI o konkretne kolory, style, układ strony i funkcje.
+            </p>
+          </div>
         </div>
-      </main>
+      </article>
+
+      <!-- Pagination -->
+      <div class="flex justify-between mt-12">
+        <a href="/dokumentacja/przyklad" class="btn btn-outline">← Wstecz</a>
+        <a href="/dokumentacja/github" class="btn btn-primary">Dalej →</a>
+      </div>
+    </main>
   </body>
 </html>

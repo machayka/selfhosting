@@ -1,0 +1,290 @@
+<!doctype html>
+<html data-theme="dark" lang="pl">
+  <head>
+    <title>Dokumentacja - Self-hosting</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+
+  <body class="bg-base-200">
+    <!-- Sidebar -->
+    <!--#include virtual="/components/sidebar.html" -->
+
+    <!-- Main content -->
+    <main class="w-full lg:ml-64 max-w-6xl mx-auto p-6 lg:p-8">
+      <!-- Content sections -->
+      <article class="prose prose-lg max-w-none">
+        <!-- Wprowadzenie -->
+        <section id="wprowadzenie" class="mb-12">
+          <h1 class="text-4xl font-bold mb-4">SEO i promocja strony</h1>
+
+          <p class="mb-4">
+            Masz już działającą stronę internetową z własną domeną. Świetnie! Ale jak sprawić, żeby
+            ludzie ją znaleźli?
+          </p>
+        </section>
+
+        <section class="mb-12">
+          <p class="mb-4">
+            <strong>SEO (Search Engine Optimization)</strong> to optymalizacja strony pod kątem
+            wyszukiwarek internetowych, głównie Google. Dzięki temu Twoja strona może pojawiać się
+            wyżej w wynikach wyszukiwania.
+          </p>
+
+          <div class="alert alert-info mb-6">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              class="stroke-current shrink-0 w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+              ></path>
+            </svg>
+            <div>
+              <strong>Ważne:</strong><br />
+              Indeksowanie przez Google trwa długo - często od kilku tygodni do kilku miesięcy,
+              zanim Twoja strona zacznie pojawiać się w wynikach wyszukiwania. To normalny proces.
+            </div>
+          </div>
+        </section>
+
+        <!-- AI i SEO -->
+        <section id="ai-seo" class="mb-12">
+          <h2 class="text-3xl font-bold mb-4">🤖 Popraw SEO z pomocą AI</h2>
+
+          <div class="card bg-base-100 shadow-xl mb-6">
+            <div class="card-body">
+              <p class="mb-4">
+                Możesz poprosić AI (np. ChatGPT, Claude) o optymalizację Twojej strony pod SEO.
+                Wystarczy wkleić kod swojej strony i zapytać:
+              </p>
+
+              <div class="card bg-base-300 p-4 mb-4">
+                <p class="font-mono text-sm">
+                  "Zoptymalizuj ten kod HTML pod SEO. Dodaj odpowiednie meta tagi, opisy, nagłówki i
+                  strukturę, która pomoże w pozycjonowaniu w Google."
+                </p>
+              </div>
+
+              <h3 class="font-bold text-lg mb-2">Co AI może poprawić:</h3>
+              <ul class="list-disc list-inside space-y-2">
+                <li>
+                  <strong>Meta tagi</strong> - tytuł strony, opis, słowa kluczowe (to co widać w
+                  wynikach Google)
+                </li>
+                <li><strong>Struktura nagłówków</strong> - prawidłowe użycie H1, H2, H3</li>
+                <li><strong>Alt teksty dla obrazków</strong> - opisy zdjęć dla wyszukiwarek</li>
+                <li><strong>Semantic HTML</strong> - lepsze znaczniki dla lepszej indeksacji</li>
+                <li>
+                  <strong>Open Graph</strong> - jak strona wygląda gdy ktoś ją udostępnia na social
+                  media
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="alert alert-success mb-6">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="stroke-current shrink-0 h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+              />
+            </svg>
+            <span
+              ><strong>Ważne:</strong> Po otrzymaniu zoptymalizowanego kodu od AI, zaktualizuj swój
+              plik index.html na GitHubie, tak jak nauczyłeś/aś się wcześniej.</span
+            >
+          </div>
+        </section>
+
+        <!-- Google Search Console -->
+        <section id="google-search-console" class="mb-12">
+          <h2 class="text-3xl font-bold mb-4">📊 Google Search Console</h2>
+
+          <div class="card bg-base-100 shadow-xl mb-6">
+            <div class="card-body">
+              <p class="mb-4">
+                Aby przyspieszyć indeksowanie i monitorować swoją stronę w Google, zarejestruj się w
+                <a
+                  href="https://search.google.com/search-console"
+                  target="_blank"
+                  class="underline font-bold"
+                  >Google Search Console</a
+                >
+                (bezpłatnie).
+              </p>
+
+              <h3 class="font-bold text-lg mb-2">Co to Ci da:</h3>
+              <ul class="list-disc list-inside space-y-2 opacity-75">
+                <li>Możesz ręcznie poprosić Google o zaindeksowanie strony</li>
+                <li>Zobacz, jakie słowa kluczowe prowadzą ludzi na Twoją stronę</li>
+                <li>Sprawdź, czy strona ma błędy techniczne</li>
+                <li>Monitoruj ilość odwiedzin z Google</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="alert alert-warning mb-6">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="stroke-current shrink-0 h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"
+              />
+            </svg>
+            <div>
+              <strong>Pamiętaj:</strong><br />
+              Nawet po dodaniu strony do Google Search Console, pełne zaindeksowanie i pojawienie
+              się w wynikach może zająć od kilku tygodni do kilku miesięcy. SEO to długoterminowa
+              gra.
+            </div>
+          </div>
+        </section>
+
+        <!-- Reklamy Google Ads -->
+        <section id="google-ads" class="mb-12">
+          <h2 class="text-3xl font-bold mb-4">🚀 Szybszy ruch - Google Ads</h2>
+
+          <div class="card bg-base-100 shadow-xl mb-6">
+            <div class="card-body">
+              <p class="mb-4">
+                Jeśli nie chcesz czekać miesiącami na organiczny ruch z wyszukiwarki, możesz
+                skorzystać z
+                <strong
+                  ><a href="https://ads.google.com" target="_blank" class="underline"
+                    >Google Ads</a
+                  ></strong
+                >
+                - płatnych reklam w Google.
+              </p>
+
+              <h3 class="font-bold text-lg mb-2">Jak to działa:</h3>
+              <ul class="list-disc list-inside space-y-2 opacity-75 mb-4">
+                <li>
+                  Płacisz za każde kliknięcie w Twoją reklamę (zwykle od kilku groszy do kilku zł)
+                </li>
+                <li>Twoja strona pojawia się na górze wyników Google od razu</li>
+                <li>
+                  Możesz precyzyjnie targetować - np. tylko osoby z Twojego miasta szukające
+                  "fryzjer Warszawa"
+                </li>
+                <li>Kontrolujesz budżet - możesz wydawać 20 zł dziennie lub 2000 zł dziennie</li>
+              </ul>
+
+              <div class="alert alert-info">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  class="stroke-current shrink-0 w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                  ></path>
+                </svg>
+                <div>
+                  <strong>Zainteresowany/a reklamami?</strong><br />
+                  Więcej informacji o skutecznej promocji biznesu w internecie znajdziesz na
+                  <a
+                    href="https://alprom.pl?utm_source=selfhosting.pl&utm_medium=referral&utm_campaign=seo_docs"
+                    target="_blank"
+                    class="underline font-bold"
+                    >alprom.pl</a
+                  >.
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Podsumowanie -->
+        <section id="podsumowanie" class="mb-12">
+          <h2 class="text-3xl font-bold mb-4">✅ Podsumowanie</h2>
+
+          <div class="card bg-base-100 shadow-xl mb-6">
+            <div class="card-body">
+              <ul class="space-y-3">
+                <li class="flex items-start">
+                  <span class="text-primary mr-2">1.</span>
+                  <span
+                    ><strong>Popraw SEO z AI</strong> - zoptymalizuj kod strony pod
+                    wyszukiwarki</span
+                  >
+                </li>
+                <li class="flex items-start">
+                  <span class="text-primary mr-2">2.</span>
+                  <span
+                    ><strong>Zarejestruj się w Google Search Console</strong> - monitoruj i
+                    przyspieszaj indeksowanie</span
+                  >
+                </li>
+                <li class="flex items-start">
+                  <span class="text-primary mr-2">3.</span>
+                  <span
+                    ><strong>Bądź cierpliwy</strong> - SEO wymaga czasu (tygodnie/miesiące)</span
+                  >
+                </li>
+                <li class="flex items-start">
+                  <span class="text-primary mr-2">4.</span>
+                  <span
+                    ><strong>Rozważ Google Ads</strong> - jeśli potrzebujesz szybkich wyników</span
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="alert alert-success">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="stroke-current shrink-0 h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+              />
+            </svg>
+            <div>
+              <strong>Gratulacje! Ukończyłeś/aś tutorial! 🎉</strong><br />
+              Masz teraz profesjonalną stronę internetową z własną domeną, gotową do promocji.
+              Powodzenia!
+            </div>
+          </div>
+        </section>
+      </article>
+
+      <!-- Pagination -->
+      <div class="flex justify-between mt-12">
+        <a href="/dokumentacja/domena" class="btn btn-outline">← Wstecz</a>
+        <a href="/" class="btn btn-primary">Strona główna →</a>
+      </div>
+    </main>
+  </body>
+</html>

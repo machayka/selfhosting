@@ -1,14 +1,10 @@
-<!DOCTYPE html>
+<!doctype html>
 <html data-theme="dark" lang="pl">
   <head>
     <title>Dokumentacja - Self-hosting</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/daisyui@5"
-      rel="stylesheet"
-      type="text/css"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
 
@@ -22,12 +18,11 @@
       <article class="prose prose-lg max-w-none">
         <!-- Witaj -->
         <section id="witaj" class="mb-12">
-          <h1 class="text-4xl font-bold mb-4">Witaj w dokumentacji</h1>
+          <h1 class="text-4xl font-bold mb-4">Wprowadzenie</h1>
 
           <p class="mb-4">
-            Instrukcja obsługi dla programistów amatorów. Każde narzędzie
-            używane przez programistów ma swoją dokumentację, którą studiują
-            przez godziny.
+            Utrzymanie uwagi nawet na 5 minut bywa ciężkie (zwłaszcza jak trzeba czytać) ale zapewniam, że podążając z
+            poradnikiem w 30 minucie możesz mieć już własną stronę internetową.
           </p>
 
           <div class="alert alert-success mb-6">
@@ -45,50 +40,42 @@
               />
             </svg>
             <div>
-              <strong>Ta jest inna:</strong> napisana prostym językiem, bez
-              żargonu technicznego, z praktycznymi przykładami. Przeprowadzimy
-              Cię przez każdy krok – wszystko wyjaśnimy tak, żebyś rozumiał nie
-              tylko "co", ale i "dlaczego".
+              W przyszłości z tego poradnika dowiesz się, jak skonfigurować
+              <a
+                href="https://community-scripts.github.io/ProxmoxVE/scripts"
+                class="text-blue-500 underline"
+                target="_blank"
+              >
+                inne ciekawe
+              </a>
+              rzeczy - oprócz strony internetowej.
             </div>
           </div>
         </section>
 
         <!-- Czym jest self-hosting -->
-        <section id="self-hosting" class="mb-12">
-          <h2 class="text-3xl font-bold mb-4">Czym jest self-hosting?</h2>
+        <section id="self-hosting" class="mb-6">
+          <h2 class="text-3xl font-bold mb-4">Dlaczego self-hosting?</h2>
 
           <div class="card bg-base-100 shadow-xl">
             <div class="card-body">
               <p class="text-lg">
-                Self-hosting to prowadzenie własnego serwera zamiast
-                wynajmowania miejsca u zewnętrznego dostawcy.
+                Self-hosting to prowadzenie własnego serwera zamiast wynajmowania miejsca u zewnętrznego dostawcy. Nie
+                musisz płacić za miejsce, którego nawet nie wiesz jak i czy wykorzystasz. Bez obaw, w tym poradniku
+                pokaże Ci jak postawić stronę nawet bez własnego sprzętu. Zaczniemy od
+                <a
+                  href="https://google.com?q=co%20to%20statyczna%20strona%20internetowa"
+                  class="text-blue-500 underline"
+                  target="_blank"
+                >
+                  statycznej strony</a
+                >.
               </p>
             </div>
           </div>
         </section>
-
-        <!-- Dlaczego warto -->
-        <section id="dlaczego" class="mb-12">
-          <h2 class="text-3xl font-bold mb-4">
-            Dlaczego warto, jeśli myślisz o hostowaniu strony dłużej niż rok?
-          </h2>
-
-          <div class="card bg-base-100 shadow-xl mb-6">
-            <div class="card-body">
-              <p class="mb-4">
-                Dostawcy hostingu regularnie podnoszą ceny. Dzisiaj płacisz
-                <strong>50 zł miesięcznie</strong>, za rok
-                <strong>80 zł</strong>, a gdy "promocja się kończy" – nawet
-                <strong>150 zł</strong>.
-              </p>
-              <p>
-                Z inwestycją w całą zawartość strony zostaje Ci tylko płacić.
-                Przy self-hostingu jedynym kosztem jest prąd.
-              </p>
-            </div>
-          </div>
-
-          <div class="stats stats-vertical lg:stats-horizontal shadow mb-6">
+          
+        <div class="stats stats-vertical lg:stats-horizontal shadow mb-12">
             <div class="stat">
               <div class="stat-title">Hosting tradycyjny</div>
               <div class="stat-value text-error">600-1800 zł/rok</div>
@@ -96,7 +83,7 @@
             </div>
             <div class="stat">
               <div class="stat-title">Self-hosting</div>
-              <div class="stat-value text-success">~50 zł/rok</div>
+              <div class="stat-value text-success">~100 zł/rok</div>
               <div class="stat-desc">Tylko prąd + domena</div>
             </div>
           </div>
@@ -104,9 +91,7 @@
 
         <!-- Czy oprogramowanie jest darmowe -->
         <section id="darmowe" class="mb-12">
-          <h2 class="text-3xl font-bold mb-4">
-            Czy oprogramowanie jest darmowe?
-          </h2>
+          <h2 class="text-3xl font-bold mb-4">Czy oprogramowanie jest darmowe?</h2>
 
           <div class="alert alert-info mb-6">
             <svg
@@ -123,10 +108,7 @@
               ></path>
             </svg>
             <div>
-              <strong
-                >Tak – całe oprogramowanie serwerowe jest open source i dostępne
-                za darmo.</strong
-              >
+              <strong> Tak – całe oprogramowanie serwerowe jest open source i dostępne za darmo. </strong>
             </div>
           </div>
 
@@ -134,47 +116,46 @@
             <div class="card bg-base-100 shadow-xl">
               <div class="card-body">
                 <h3 class="card-title text-success">✓ Serwery WWW</h3>
-                <p class="text-sm">Nginx, Apache – darmowe</p>
               </div>
             </div>
 
             <div class="card bg-base-100 shadow-xl">
               <div class="card-body">
                 <h3 class="card-title text-success">✓ Bazy danych</h3>
-                <p class="text-sm">MySQL, PostgreSQL – darmowe</p>
               </div>
             </div>
 
             <div class="card bg-base-100 shadow-xl">
               <div class="card-body">
                 <h3 class="card-title text-success">✓ Języki programowania</h3>
-                <p class="text-sm">PHP, Python, Node.js – darmowe</p>
               </div>
             </div>
 
             <div class="card bg-base-100 shadow-xl">
               <div class="card-body">
                 <h3 class="card-title text-success">✓ System operacyjny</h3>
-                <p class="text-sm">Linux – darmowy</p>
               </div>
             </div>
 
-            <div class="card bg-base-100 shadow-xl md:col-span-2">
+
+            <div class="card bg-base-100 shadow-xl">
               <div class="card-body">
                 <h3 class="card-title text-success">✓ Certyfikaty SSL</h3>
-                <p class="text-sm">
-                  Kłódka przy adresie HTTPS – darmowe dzięki Let's Encrypt
-                </p>
               </div>
             </div>
+
+            <div class="card bg-base-100 shadow-xl">
+              <div class="card-body">
+                <h3 class="card-title text-success">✓ Wordpress</h3>
+              </div>
+            </div>
+
           </div>
         </section>
 
         <!-- Co sprzedają -->
         <section id="co-sprzedaja" class="mb-12">
-          <h2 class="text-3xl font-bold mb-4">
-            Co więc sprzedają firmy hostingowe?
-          </h2>
+          <h2 class="text-3xl font-bold mb-4">Co więc sprzedają firmy hostingowe?</h2>
 
           <div class="alert alert-warning">
             <svg
@@ -192,15 +173,11 @@
             </svg>
             <div>
               <p class="mb-2">
-                <strong
-                  >Wynajmują Ci komputer z zainstalowanym darmowym
-                  oprogramowaniem.</strong
-                >
+                <strong>Wynajmują Ci komputer z zainstalowanym darmowym oprogramowaniem.</strong>
               </p>
               <p>
-                To jak gdyby ktoś pobrał darmowy VLC Player, zainstalował go na
-                swoim laptopie i kazał Ci płacić 50 zł miesięcznie za "usługę
-                odtwarzania filmów".
+                To jak gdyby ktoś pobrał darmowy VLC Player, zainstalował go na swoim laptopie i kazał Ci płacić 50 zł
+                miesięcznie za "usługę odtwarzania filmów, bo ty nie umiesz sam/a go zainstalować".
               </p>
             </div>
           </div>
@@ -209,9 +186,7 @@
 
       <!-- Pagination -->
       <div class="flex justify-end mt-12">
-        <a href="/dokumentacja/pierwszy-krok" class="btn btn-primary"
-          >Dalej →</a
-        >
+        <a href="/dokumentacja/przyklad" class="btn btn-primary">Dalej →</a>
       </div>
     </main>
   </body>

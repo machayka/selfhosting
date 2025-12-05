@@ -1,14 +1,10 @@
-<!DOCTYPE html>
+<!doctype html>
 <html data-theme="dark" lang="pl">
   <head>
     <title>Dokumentacja - Self-hosting</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/daisyui@5"
-      rel="stylesheet"
-      type="text/css"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
 
@@ -22,59 +18,25 @@
       <article class="prose prose-lg max-w-none">
         <!-- Wprowadzenie -->
         <section id="wprowadzenie" class="mb-12">
-          <h1 class="text-4xl font-bold mb-4">Pierwszy krok: Fundamenty</h1>
+          <h1 class="text-4xl font-bold mb-4">Przykład</h1>
 
           <p class="mb-4">
-            Zanim zanurzymy się w tworzenie strony, zacznijmy od fundamentu –
-            narzędzi.
+            Zanim zajmiemy się własną stroną zobaczmy działającą stronę internetową.
           </p>
         </section>
 
-        <!-- GitHub -->
-        <section id="github" class="mb-12">
-          <h2 class="text-3xl font-bold mb-4">
-            Czym jest
-            <a
-              href="https://github.com/"
-              target="_blank"
-              class="link link-primary"
-              >GitHub</a
-            >
-            i dlaczego zaczynamy właśnie od niego?
-          </h2>
-
-          <p class="mb-4">
-            GitHub to coś w rodzaju ogromnej biblioteki kodu. Programiści z
-            całego świata udostępniają tu swoje projekty – od prostych stron po
-            złożone aplikacje. I co najlepsze?
-            <strong>Wszystko za darmo.</strong>
-          </p>
-
-          <h3 class="text-2xl font-bold mb-4 mt-8">
-            Dlaczego startujemy właśnie stąd?
-          </h3>
-
-          <p class="mb-4">
-            Wyobraź sobie, że uczysz się gotować. Możesz czytać przepisy w
-            kółko, ale prawdziwa nauka zaczyna się, gdy zobaczysz
-            <em>jak</em> ktoś przygotowuje danie krok po kroku. Z programowaniem
-            jest podobnie.
-          </p>
-
+        <section class="mb-12">
           <p class="mb-4">
             Przygotowaliśmy dla Ciebie
-            <strong>gotową stronę przykładową</strong>. Zanim przejdziemy do
-            stawiania serwera i bardziej zaawansowanych rzeczy, chcemy, żebyś
-            mógł:
+            <strong>gotową przykładową stronę</strong>. Zanim przejdziemy do stawiania serwera i
+            bardziej zaawansowanych rzeczy, chcemy, żebyś mógł:
           </p>
 
           <ul class="list-disc list-inside space-y-2 mb-6">
+            <li>Zobaczyć, jak wygląda działająca strona internetowa "od środka"</li>
             <li>
-              Zobaczyć, jak wygląda działająca strona internetowa "od środka"
-            </li>
-            <li>
-              Poznać strukturę plików i kodu, bo strona internetowa to po prostu
-              pliki z tekstem, a nie magia
+              Poznać strukturę plików i kodu, bo strona internetowa to po prostu pliki z tekstem, a
+              nie magia
             </li>
             <li>Zrozumieć, z czym właściwie będziesz pracować</li>
           </ul>
@@ -112,10 +74,10 @@
                     <p class="text-sm">
                       Wejdź na:
                       <a
-                        href="github.com/self-hosting-pl/przykladowa-strona"
+                        href="https://github.com/machayka/twoja-strona"
                         target="_blank"
                         class="font-bold hover:underline"
-                        >github.com/self-hosting-pl/przykladowa-strona</a
+                        >github.com/machayka/twoja-strona</a
                       >
                     </p>
                   </div>
@@ -134,6 +96,9 @@
                   </div>
                 </div>
               </div>
+              <div class="mt-4">
+                <img src="../assets/pobierz-kod-z-githuba.png" alt="Instrukcja pobierania kodu z GitHuba" class="rounded-lg shadow-lg w-full" />
+              </div>
             </div>
           </div>
 
@@ -151,9 +116,7 @@
                 </div>
                 <div class="step step-primary">
                   <div class="text-left ml-4">
-                    <p class="text-sm">
-                      Otwórz rozpakowany folder <code>twoja-strona</code>
-                    </p>
+                    <p class="text-sm">Otwórz rozpakowany folder <code>twoja-strona</code></p>
                   </div>
                 </div>
                 <div class="step step-primary">
@@ -183,8 +146,8 @@
               />
             </svg>
             <div>
-              <strong>Co się stanie?</strong> Otworzy się Twoja przeglądarka i
-              zobaczysz działającą stronę internetową! 🎉
+              <strong>Co się stanie?</strong> Otworzy się Twoja przeglądarka i zobaczysz działającą
+              stronę internetową! 🎉
             </div>
           </div>
         </section>
@@ -195,55 +158,20 @@
 
           <p class="mb-4">
             Właśnie otworzyłeś stronę internetową
-            <strong>na swoim komputerze</strong>. W pasku adresu widzisz coś w
-            stylu:
+            <strong>na swoim komputerze</strong>. W pasku adresu widzisz coś w stylu:
           </p>
 
           <div class="mx-auto mb-16">
-            <div
-              class="mockup-browser border border-base-200 w-full bg-base-100"
-            >
+            <div class="mockup-browser border border-base-200 w-full bg-base-100">
               <div class="mockup-browser-toolbar">
                 <div class="input w-100">
-                  file:///C:/Users/Imie/Desktop/przykladowa-strona/index.html
+                  file:///C:/Users/Imie/Desktop/twoja-strona/index.html
                 </div>
               </div>
-              <img src="../assets/website-example.png" class="fit" />
+              <img src="../assets/website-example-large.png" class="fit" />
             </div>
           </div>
-
-          <p class="mb-4">
-            To znaczy, że przeglądarka pokazuje plik z Twojego dysku –
-            <strong
-              >dokładnie tak samo jak będzie pokazywać go innym ludziom przez
-              internet</strong
-            >, gdy postawisz serwer.
-          </p>
-        </section>
-
-        <!-- Co znajduje się w folderze -->
-        <section id="pliki" class="mb-12">
-          <h2 class="text-3xl font-bold mb-4">
-            📂 Co znajduje się w folderze?
-          </h2>
-
-          <p class="mb-4">Otwórz folder i zobacz pliki:</p>
-
-          <div class="card bg-base-100 shadow-xl mb-4">
-            <div class="card-body">
-              <h3 class="card-title"><code>index.html</code></h3>
-              <p>główny plik strony (tekst, obrazki, struktura)</p>
-            </div>
-          </div>
-
-          <div class="card bg-base-100 shadow-xl mb-4">
-            <div class="card-body">
-              <h3 class="card-title"><code>style.css</code></h3>
-              <p>wygląd strony (kolory, czcionki, rozmieszczenie)</p>
-            </div>
-          </div>
-
-          <div class="alert alert-info mt-6">
+          <div class="alert alert-info">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -258,10 +186,11 @@
               ></path>
             </svg>
             <div>
-              <strong>To wszystko.</strong> Strona internetowa to po prostu
-              pliki tekstowe, które przeglądarka potrafi ładnie wyświetlić.
+              To znaczy, że przeglądarka pokazuje plik z Twojego dysku –
+              <strong>dokładnie tak samo jak będzie pokazywać go innym ludziom przez internet</strong>.
             </div>
           </div>
+
         </section>
 
         <!-- Co osiągnąłeś -->
@@ -299,8 +228,8 @@
             </svg>
             <div>
               <strong
-                >Teraz nauczymy Cię, jak sprawić, żeby tę stronę dostosować do
-                twojej firmy ZA DARMO.</strong
+                >Teraz nauczymy Cię, jak sprawić, żeby tę stronę dostosować do twojej firmy ZA
+                DARMO.</strong
               >
             </div>
           </div>
@@ -309,8 +238,8 @@
 
       <!-- Pagination -->
       <div class="flex justify-between mt-12">
-        <button class="btn btn-outline">← Wstecz</button>
-        <button class="btn btn-primary">Dalej →</button>
+    <a href="/dokumentacja/wprowadzenie" class="btn btn-outline">← Wstecz</a>
+    <a href="/dokumentacja/edycja-strony-z-ai" class="btn btn-primary">Dalej →</a>
       </div>
     </main>
   </body>

@@ -1,8 +1,5 @@
 <!-- Hamburger (mobile only) -->
-<label
-  for="drawer"
-  class="btn btn-square btn-ghost lg:hidden fixed top-4 right-4 z-50"
->
+<label for="drawer" class="btn btn-square btn-ghost lg:hidden fixed top-4 right-4 z-50">
   <svg
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
@@ -31,12 +28,15 @@
         <ul class="menu menu-compact">
           <li class="menu-title"><span>Szybki start</span></li>
           <li><a href="/dokumentacja/wprowadzenie">Wprowadzenie</a></li>
-          <li><a href="/dokumentacja/pierwszy-krok">Pierwszy krok</a></li>
+          <li><a href="/dokumentacja/przyklad">Przykład</a></li>
           <li class="menu-title mt-4"><span>Strona internetowa</span></li>
           <li>
             <a href="/dokumentacja/edycja-strony-z-ai">Edycja strony z AI</a>
           </li>
           <li><a href="/dokumentacja/github">Github</a></li>
+          <li><a href="/dokumentacja/domena">Domena</a></li>
+          <li><a href="/dokumentacja/seo">SEO i promocja</a></li>
+          <li class="menu-title mt-4"><span>Pracujemy nad kolejną częścią...</span></li>
         </ul>
       </div>
     </aside>
@@ -55,17 +55,19 @@
     <ul class="menu menu-compact">
       <li class="menu-title"><span>Szybki start</span></li>
       <li><a href="/dokumentacja/wprowadzenie">Wprowadzenie</a></li>
-      <li><a href="/dokumentacja/pierwszy-krok">Pierwszy krok</a></li>
+      <li><a href="/dokumentacja/przyklad">Przykład</a></li>
       <li class="menu-title mt-4"><span>Strona internetowa</span></li>
       <li><a href="/dokumentacja/edycja-strony-z-ai">Edycja strony z AI</a></li>
       <li><a href="/dokumentacja/github">Github</a></li>
+      <li><a href="/dokumentacja/domena">Domena</a></li>
+      <li><a href="/dokumentacja/seo">SEO i promocja</a></li>
+      <li class="menu-title mt-4"><span>Pracujemy nad kolejną częścią...</span></li>
     </ul>
   </div>
 </aside>
 
 <script>
   document.querySelectorAll("#sidebar a").forEach((link) => {
-    if (link.getAttribute("href") === location.pathname)
-      link.classList.add("bg-base-300");
+    if (link.getAttribute("href") === location.pathname) link.classList.add("bg-base-300");
   });
 </script>
