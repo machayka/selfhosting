@@ -6,6 +6,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Pobierz gotowy przykład strony www z GitHub. Naucz się struktury plików HTML zanim zbudujesz własną stronę. Przewodnik krok po kroku." />
     <meta name="keywords" content="przykładowa strona www, szablon strony html, github strona, darmowy szablon, darmowa strona www" />
+
+    <!-- JSON-LD Structured Data -->
+    <!-- Organization Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "SelfHosting.pl",
+      "url": "https://selfhosting.pl",
+      "description": "Darmowy poradnik self-hostingu dla firm",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "Customer Support",
+        "telephone": "+48530547713",
+        "email": "kacpermachay@gmail.com"
+      },
+      "inLanguage": "pl-PL"
+    }
+    </script>
+
+    <!-- BreadcrumbList Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Strona główna",
+          "item": "https://selfhosting.pl"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Dokumentacja",
+          "item": "https://selfhosting.pl/dokumentacja"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Przykładowa Strona WWW",
+          "item": "https://selfhosting.pl/dokumentacja/przyklad"
+        }
+      ]
+    }
+    </script>
+
+    <!-- HowTo Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Jak pobrać przykładową stronę WWW",
+      "description": "Pobierz gotowy przykład strony www z GitHub. Naucz się struktury plików HTML zanim zbudujesz własną stronę.",
+      "url": "https://selfhosting.pl/dokumentacja/przyklad",
+      "inLanguage": "pl-PL",
+      "datePublished": "2025-12-07",
+      "dateModified": "2025-12-07",
+      "totalTime": "PT10M",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "Wejdź na GitHub",
+          "text": "Otwórz repozytorium z przykładową stroną na GitHub: https://github.com/machayka/twoja-strona"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "Pobierz pliki",
+          "text": "Kliknij zielony przycisk 'Code', następnie wybierz 'Download ZIP'. Rozpakuj pobrane pliki na swoim komputerze."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "Otwórz w przeglądarce",
+          "text": "Znajdź plik index.html i otwórz go w przeglądarce internetowej. Możesz też otworzyć folder w edytorze kodu, aby zobaczyć strukturę plików HTML, CSS i obrazków."
+        }
+      ]
+    }
+    </script>
+
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>

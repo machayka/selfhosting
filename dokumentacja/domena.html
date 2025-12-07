@@ -6,6 +6,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Jak podłączyć własną domenę do strony na GitHub Pages? Konfiguracja DNS dla lh.pl, OVH, Nazwa.pl. Instrukcja krok po kroku." />
     <meta name="keywords" content="własna domena github, konfiguracja dns, podłączenie domeny, custom domain github pages, darmowa strona www" />
+
+    <!-- JSON-LD Structured Data -->
+    <!-- Organization Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "SelfHosting.pl",
+      "url": "https://selfhosting.pl",
+      "description": "Darmowy poradnik self-hostingu dla firm",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "Customer Support",
+        "telephone": "+48530547713",
+        "email": "kacpermachay@gmail.com"
+      },
+      "inLanguage": "pl-PL"
+    }
+    </script>
+
+    <!-- BreadcrumbList Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Strona główna",
+          "item": "https://selfhosting.pl"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Dokumentacja",
+          "item": "https://selfhosting.pl/dokumentacja"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Podłączenie Własnej Domeny",
+          "item": "https://selfhosting.pl/dokumentacja/domena"
+        }
+      ]
+    }
+    </script>
+
+    <!-- HowTo Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Jak podłączyć własną domenę do GitHub Pages",
+      "description": "Jak podłączyć własną domenę do strony na GitHub Pages? Konfiguracja DNS dla lh.pl, OVH, Nazwa.pl. Instrukcja krok po kroku.",
+      "url": "https://selfhosting.pl/dokumentacja/domena",
+      "inLanguage": "pl-PL",
+      "datePublished": "2025-12-07",
+      "dateModified": "2025-12-07",
+      "totalTime": "PT20M",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "Kup domenę",
+          "text": "Zarejestruj domenę u wybranego rejestratora (np. lh.pl, OVH, Nazwa.pl). Koszt to około 50 zł rocznie dla domeny .pl."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "Skonfiguruj DNS",
+          "text": "W panelu rejestratora dodaj 4 rekordy A wskazujące na serwery GitHub (185.199.108.153, 185.199.109.153, 185.199.110.153, 185.199.111.153). Dodaj także rekord CNAME 'www' wskazujący na twoje-konto.github.io."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "Połącz domenę z GitHub",
+          "text": "W repozytorium GitHub przejdź do Settings → Pages. W polu 'Custom domain' wpisz swoją domenę (np. mojastrona.pl). Kliknij 'Save'."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 4,
+          "name": "Włącz HTTPS",
+          "text": "Poczekaj kilka minut aż DNS się rozpropaguje. Zaznacz opcję 'Enforce HTTPS' w GitHub Pages settings. Twoja strona będzie dostępna przez bezpieczne połączenie."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 5,
+          "name": "Weryfikuj działanie",
+          "text": "Sprawdź czy strona działa wpisując w przeglądarce swoją domenę. Propagacja DNS może zająć do 24-48 godzin."
+        }
+      ]
+    }
+    </script>
+
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>

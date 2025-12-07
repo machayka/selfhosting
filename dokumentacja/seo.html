@@ -6,6 +6,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Jak promować stronę www? Optymalizacja SEO, rejestracja w Google Search Console, podstawy Google Ads. Zwiększ ruch na stronie." />
     <meta name="keywords" content="seo strony www, google search console, promocja strony, pozycjonowanie strony, darmowa strona www" />
+
+    <!-- JSON-LD Structured Data -->
+    <!-- Organization Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "SelfHosting.pl",
+      "url": "https://selfhosting.pl",
+      "description": "Darmowy poradnik self-hostingu dla firm",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "Customer Support",
+        "telephone": "+48530547713",
+        "email": "kacpermachay@gmail.com"
+      },
+      "inLanguage": "pl-PL"
+    }
+    </script>
+
+    <!-- BreadcrumbList Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Strona główna",
+          "item": "https://selfhosting.pl"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Dokumentacja",
+          "item": "https://selfhosting.pl/dokumentacja"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "SEO i Promocja Strony",
+          "item": "https://selfhosting.pl/dokumentacja/seo"
+        }
+      ]
+    }
+    </script>
+
+    <!-- HowTo Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Jak promować stronę WWW i poprawić SEO",
+      "description": "Jak promować stronę www? Optymalizacja SEO, rejestracja w Google Search Console, podstawy Google Ads. Zwiększ ruch na stronie.",
+      "url": "https://selfhosting.pl/dokumentacja/seo",
+      "inLanguage": "pl-PL",
+      "datePublished": "2025-12-07",
+      "dateModified": "2025-12-07",
+      "totalTime": "PT30M",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "Dodaj meta tagi SEO",
+          "text": "Uzupełnij meta title, description i keywords w każdej podstronie. Title powinien mieć 50-60 znaków, description 150-160 znaków. Używaj słów kluczowych, które wyszukują Twoi klienci."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "Zarejestruj stronę w Google Search Console",
+          "text": "Przejdź na search.google.com/search-console. Dodaj swoją domenę jako właściwość. Prześlij sitemap.xml aby Google mógł zindeksować wszystkie podstrony."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "Optymalizuj treść",
+          "text": "Używaj nagłówków H1-H6, dodaj opisy alt do obrazków, pisz wartościowe treści dla użytkowników. Strona powinna być responsywna i szybko się ładować."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 4,
+          "name": "Monitoruj wyniki",
+          "text": "Regularnie sprawdzaj Google Search Console i Google Analytics. Śledź pozycje w wyszukiwarce, ruch organiczny i zachowania użytkowników."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 5,
+          "name": "Rozważ Google Ads (opcjonalnie)",
+          "text": "Jeśli potrzebujesz szybszych rezultatów, uruchom kampanię Google Ads. Zacznij od małego budżetu (10-20 zł/dzień) i testuj różne reklamy."
+        }
+      ]
+    }
+    </script>
+
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
