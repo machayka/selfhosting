@@ -82,10 +82,12 @@
                   <h4 class="font-bold text-lg mb-2">
                     Krok 2: Przejdź do ustawień repozytorium na GitHub
                   </h4>
-                  <p class="text-sm opacity-75 mb-2">
-                    Wejdź na <code>github.com</code> → Twoje repozytorium → zakładka
-                    <strong>Settings</strong>
-                  </p>
+
+                  <img
+                    src="../assets/github-settings.png"
+                    alt="Przesłanie pliku index.html"
+                    class="rounded-lg shadow-lg max-w-full py-2"
+                  />
                 </li>
                 <li>
                   <h4 class="font-bold text-lg mb-2">Krok 3: Znajdź sekcję "Pages"</h4>
@@ -97,22 +99,44 @@
                   <h4 class="font-bold text-lg mb-2">Krok 4: Dodaj custom domain</h4>
                   <ul class="text-sm opacity-75 space-y-1 ml-4">
                     <li>
-                      • W sekcji "Custom domain" wpisz swoją domenę (np. <code>mojastrona.pl</code>)
+                      • W sekcji "Custom domain" wpisz swoją domenę, którą kupiłeś/aś (np.
+                      <code>mojastrona.pl</code>)
                     </li>
                     <li>• Kliknij <strong>Save</strong></li>
                     <li>
                       • GitHub pokaże Ci błąd - to normalne, bo DNS jeszcze nie jest skonfigurowany
                     </li>
+                    <img
+                      src="../assets/custom-domain.png"
+                      alt="Przesłanie pliku index.html"
+                      class="rounded-lg shadow-lg max-w-full py-2"
+                    />
                   </ul>
                 </li>
                 <li>
                   <h4 class="font-bold text-lg mb-2">Krok 5: Skonfiguruj DNS u dostawcy domeny</h4>
                   <p class="text-sm opacity-75 mb-2">
-                    Zaloguj się do panelu swojego dostawcy domeny i dodaj rekordy DNS:
+                    W poradniku zrobimy to na przykłądzie lh.pl, ale proces wszędzie jest podobny.
                   </p>
+                  <img
+                    src="../assets/lh-domeny.png"
+                    alt="Przesłanie pliku index.html"
+                    class="rounded-lg shadow-lg max-w-md py-2"
+                  />
+                  <img
+                    src="../assets/lh-dodaj.png"
+                    alt="Przesłanie pliku index.html"
+                    class="rounded-lg shadow-lg max-w-md py-2"
+                  />
+                  <img
+                    src="../assets/lh-dns.png"
+                    alt="Przesłanie pliku index.html"
+                    class="rounded-lg shadow-lg max-w-md py-2"
+                  />
+
                   <div class="card bg-base-300 p-4 mb-2">
                     <p class="text-sm font-bold mb-2">
-                      Jeśli używasz domeny głównej (mojastrona.pl):
+                      Zaloguj się do panelu swojego dostawcy domeny i dodaj rekordy DNS:
                     </p>
                     <ul class="text-sm space-y-1 ml-4 font-mono">
                       <li>Type: A, Host: @, Value: 185.199.108.153</li>
@@ -129,18 +153,19 @@
                       <li>Type: CNAME, Host: www, Value: nazwa-konta.github.io</li>
                     </ul>
                   </div>
+                  <p class="text-sm opacity-75 my-4">W moim przypadku wygląda to tak:</p>
+
+                  <img
+                    src="../assets/lh-dodane.png"
+                    alt="Przesłanie pliku index.html"
+                    class="rounded-lg shadow-lg max-w-full py-2"
+                  />
                 </li>
                 <li>
                   <h4 class="font-bold text-lg mb-2">Krok 6: Poczekaj na propagację DNS</h4>
                   <ul class="text-sm opacity-75 space-y-1 ml-4">
                     <li>• DNS może propagować się od 15 minut do 24 godzin</li>
                     <li>• Najczęściej działa po 1-2 godzinach</li>
-                    <li>
-                      • Możesz sprawdzić status na
-                      <a href="https://www.whatsmydns.net/" target="_blank" class="underline"
-                        >whatsmydns.net</a
-                      >
-                    </li>
                   </ul>
                 </li>
                 <li>
@@ -150,6 +175,11 @@
                     <li>• Zaznacz opcję <strong>"Enforce HTTPS"</strong></li>
                     <li>• Twoja strona będzie bezpieczna (zielona kłódka w przeglądarce)</li>
                   </ul>
+                  <img
+                    src="../assets/github-https.png"
+                    alt="Przesłanie pliku index.html"
+                    class="rounded-lg shadow-lg max-w-full py-2"
+                  />
                 </li>
               </ol>
             </div>
