@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Strona główna -->
+  <url>
+    <loc>https://selfhosting.pl/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Dokumentacja: Wprowadzenie -->
+  <url>
+    <loc>https://selfhosting.pl/dokumentacja/wprowadzenie</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Dokumentacja: Domena -->
+  <url>
+    <loc>https://selfhosting.pl/dokumentacja/domena</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Dokumentacja: GitHub -->
+  <url>
+    <loc>https://selfhosting.pl/dokumentacja/github</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Dokumentacja: SEO -->
+  <url>
+    <loc>https://selfhosting.pl/dokumentacja/seo</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Dokumentacja: Edycja strony z AI -->
+  <url>
+    <loc>https://selfhosting.pl/dokumentacja/edycja-strony-z-ai</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Dokumentacja: Przykład -->
+  <url>
+    <loc>https://selfhosting.pl/dokumentacja/przyklad</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+</urlset>

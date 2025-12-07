@@ -2,6 +2,8 @@ FROM nginx:alpine
 
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 COPY index.html /usr/share/nginx/html/
+COPY robots.txt /usr/share/nginx/html/
+COPY sitemap.xml /usr/share/nginx/html/
 COPY dokumentacja/ /usr/share/nginx/html/
 COPY components/ /usr/share/nginx/html/components/
 COPY assets/ /usr/share/nginx/html/assets/

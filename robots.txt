@@ -1,0 +1,7 @@
+# robots.txt dla selfhosting.pl
+# Plik określający zasady indeksowania strony przez roboty wyszukiwarek
+
+User-agent: *
+Allow: /
+
+Sitemap: https://selfhosting.pl/sitemap.xml
